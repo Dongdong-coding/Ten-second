@@ -1,0 +1,38 @@
+[
+  {
+    "clause_id": "C-101",
+    "confidence": 0.92,
+    "risk_flag": "HIGH",
+    "adopted_rules": ["R-PRIORITY"],
+    "reasons": ["Overrides base rent clause"]
+  },
+  {
+    "clause_id": "C-102",
+    "confidence": 0.88,
+    "risk_flag": "HIGH",
+    "adopted_rules": ["R-LATE-FEE"],
+    "reasons": ["Late fee triggers"]
+  },
+  {
+    "clause_id": "C-103",
+    "confidence": 0.75,
+    "risk_flag": "WARN",
+    "adopted_rules": ["R-DETAIL"],
+    "reasons": ["Requires supplemental guidance"]
+  },
+  {
+    "clause_id": "ANNEX-A",
+    "confidence": 0.60,
+    "risk_flag": "OK",
+    "adopted_rules": ["R-ANNEX"],
+    "reasons": ["Reference annex"]
+  },
+  {
+    "clause_id": "C-202",
+    "confidence": 0.83,
+    "risk_flag": "WARN",
+    "adopted_rules": ["R-EXCEPTION"],
+    "reasons": ["Exception clause"]
+  }
+]
+

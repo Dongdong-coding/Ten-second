@@ -1,0 +1,39 @@
+[
+  {
+    "id": "C1",
+    "index_path": "1.1",
+    "text": "임대차 계약에 따라 과태료는 월세의 10%를 넘지 않는다.",
+    "normalized_text": "penalty on rent does not exceed ten percent",
+    "title": "과태료 한도",
+    "tags": [
+      "lease",
+      "penalty"
+    ],
+    "category": "MONEY",
+    "subcategory": "DEPOSIT",
+    "canonical_terms": [
+      "penalty_rate"
+    ],
+    "def_bindings": [
+      {
+        "alias": "월세",
+        "base": "rent_monthly",
+        "value": 1000000.0
+      }
+    ]
+  },
+  {
+    "id": "C2",
+    "index_path": "1.2",
+    "text": "임대인은 계약을 위반할 경우 임차인에게 서면으로 통지한다.",
+    "normalized_text": "landlord notifies tenant in writing",
+    "title": "통지",
+    "tags": [
+      "notice"
+    ],
+    "category": "RIGHTS",
+    "subcategory": "NOTICE",
+    "canonical_terms": [],
+    "def_bindings": []
+  }
+]

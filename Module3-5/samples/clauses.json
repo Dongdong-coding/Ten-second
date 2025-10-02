@@ -1,0 +1,35 @@
+[
+  {
+    "id": "C-001",
+    "index_path": "doc-1#clause-1",
+    "text": "The tenant must remit rent by the 5th. Account number 110-222-3333333 should be used. Payment receipts are stored for 12 months.",
+    "normalized_text": "the tenant must remit rent by the 5th. account number 110-222-3333333 should be used. payment receipts are stored for 12 months.",
+    "title": "Payment Obligations",
+    "tags": [
+      "rent",
+      "payment"
+    ],
+    "category": "payments",
+    "subcategory": "methods",
+    "canonical_terms": [
+      "rent",
+      "account number"
+    ]
+  },
+  {
+    "id": "C-002",
+    "index_path": "doc-1#clause-2",
+    "text": "Penalty interest of 10% applies when rent is late for 30 days. Late fee caps at 1,000,000 KRW.",
+    "normalized_text": "penalty interest of 10% applies when rent is late for 30 days. late fee caps at 1,000,000 krw.",
+    "title": "Penalty Terms",
+    "tags": [
+      "penalty"
+    ],
+    "category": "penalties",
+    "subcategory": "late_fee",
+    "canonical_terms": [
+      "penalty",
+      "late fee"
+    ]
+  }
+]

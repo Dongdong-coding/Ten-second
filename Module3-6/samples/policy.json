@@ -1,0 +1,22 @@
+{
+  "thresholds": {
+    "HIGH": 0.99,
+    "WARN": 0.10,
+    "ambig_gap": 0.08
+  },
+  "penalties": {
+    "negation": 0.25,
+    "exception": 0.15,
+    "conflict_local": 0.20,
+    "low_evidence": 0.10
+  },
+  "resolution_order": ["scope_specificity", "priority", "most_conservative"],
+  "calibration": {
+    "enable": true,
+    "target_warn_rate": 0.90,
+    "min_warn": 0.05,
+    "max_warn": 0.20,
+    "demote_high_to_warn": true,
+    "critical_flag": "critical"
+  }
+}

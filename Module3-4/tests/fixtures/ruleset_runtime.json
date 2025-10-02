@@ -1,0 +1,69 @@
+{
+  "rules": [
+    {
+      "rule_id": "RULE-001",
+      "version": "1.0.0",
+      "scope": {
+        "category": "MONEY",
+        "subcategory": "DEPOSIT"
+      },
+      "matchers": {
+        "lexicon": [
+          "penalty",
+          "과태료"
+        ],
+        "syntax": [
+          "penalty",
+          "과태료"
+        ],
+        "numeric": [
+          {
+            "feature": "percentage",
+            "op": "<=",
+            "value": 0.1
+          }
+        ]
+      },
+      "severity": "WARN",
+      "weight": 1.0,
+      "priority": 80,
+      "evidence_hints": [
+        "clause"
+      ],
+      "requires": [
+        "percentage"
+      ],
+      "flags": [],
+      "activation": {
+        "status": "active"
+      }
+    }
+  ],
+  "lexicons": {
+    "RULE-001": [
+      "penalty",
+      "과태료"
+    ]
+  },
+  "syntax_patterns": {
+    "RULE-001": [
+      "penalty",
+      "과태료"
+    ]
+  },
+  "feature_requirements": {
+    "RULE-001": [
+      "percentage"
+    ]
+  },
+  "proximity": {
+    "window": 40
+  },
+  "negation_terms": [
+    "없다"
+  ],
+  "exception_cues": [
+    "단",
+    "다만"
+  ]
+}

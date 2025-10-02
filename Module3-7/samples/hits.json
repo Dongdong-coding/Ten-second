@@ -1,0 +1,29 @@
+[
+  {
+    "rule_id": "R-PRIORITY",
+    "clause_id": "C-101",
+    "match_type": "text",
+    "spans": [
+      {"start": 0, "end": 14, "text": "Notwithstanding"}
+    ],
+    "strength": 0.90
+  },
+  {
+    "rule_id": "R-LATE-FEE",
+    "clause_id": "C-102",
+    "match_type": "text",
+    "spans": [
+      {"start": 21, "end": 30, "text": "subject to"}
+    ],
+    "strength": 0.85
+  },
+  {
+    "rule_id": "R-EXCEPTION",
+    "clause_id": "C-202",
+    "match_type": "text",
+    "spans": [
+      {"start": 24, "end": 33, "text": "exception"}
+    ],
+    "strength": 0.88
+  }
+]

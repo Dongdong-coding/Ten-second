@@ -1,0 +1,98 @@
+[
+  {
+    "rule_id": "RULE-HIGH",
+    "clause_id": "C-DEMOTE",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.95,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-CRIT",
+    "clause_id": "C-CRITICAL",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.93,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-HIGH",
+    "clause_id": "C-WARN-1",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.72,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-HIGH",
+    "clause_id": "C-WARN-2",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.60,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-GENERAL",
+    "clause_id": "C-WARN-3",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.65,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-GENERAL",
+    "clause_id": "C-WARN-4",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.58,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-NEG",
+    "clause_id": "C-WARN-5",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.70,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-GENERAL",
+    "clause_id": "C-AMBIG",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.14,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-NEG",
+    "clause_id": "C-OK",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.08,
+    "notes": []
+  },
+  {
+    "rule_id": "RULE-HIGH",
+    "clause_id": "C-PENALTY",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.40,
+    "notes": ["negation"]
+  },
+  {
+    "rule_id": "RULE-NEG",
+    "clause_id": "C-SUPPRESS",
+    "match_type": "lex",
+    "spans": [[0, 10]],
+    "strength": 0.50,
+    "notes": ["negation", "exception"]
+  },
+  {
+    "rule_id": "RULE-GENERAL",
+    "clause_id": "C-SUPPRESS",
+    "match_type": "lex",
+    "spans": [[10, 20]],
+    "strength": 0.24,
+    "notes": []
+  }
+]

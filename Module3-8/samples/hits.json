@@ -1,0 +1,7 @@
+[
+  {"rule_id": "R1", "clause_id": "C1", "match_type": "exact", "strength": 0.9},
+  {"rule_id": "R3", "clause_id": "C1", "match_type": "regex", "strength": 0.7},
+  {"rule_id": "R2", "clause_id": "C2", "match_type": "keyword", "strength": 0.6},
+  {"rule_id": "R2", "clause_id": "C3", "match_type": "keyword", "strength": 0.4},
+  {"rule_id": "R2", "clause_id": "C4", "match_type": "regex", "strength": 0.5}
+]

@@ -1,0 +1,168 @@
+{
+  "results": [
+    {
+      "clause_id": "ANNEX-A",
+      "base_risk_flag": "OK",
+      "base_confidence": 0.6,
+      "relations": [
+        {
+          "type": "DEFINITION_LINK",
+          "target_clause_id": "C-103",
+          "cue": "definition"
+        }
+      ],
+      "effects": [
+        {
+          "type": "DEPEND",
+          "target_clause_id": "C-103",
+          "rationale": "DEFINITION_LINK via default:definition_link",
+          "evidence": {
+            "source_snippet": "Annex A defines the rent formula and records sample calculations.",
+            "target_snippet": "Details appear in Annex ANNEX-A, which controls the rent computation guidance."
+          }
+        }
+      ],
+      "policy_notes": [],
+      "graph_degree": {
+        "out": 1,
+        "in": 1
+      },
+      "contextual_risk_flag": "AMBIG"
+    },
+    {
+      "clause_id": "C-101",
+      "base_risk_flag": "HIGH",
+      "base_confidence": 0.92,
+      "relations": [
+        {
+          "type": "NOTWITHSTANDING",
+          "target_clause_id": "C-102",
+          "cue": "notwithstanding"
+        }
+      ],
+      "effects": [],
+      "policy_notes": [],
+      "graph_degree": {
+        "out": 1,
+        "in": 0
+      }
+    },
+    {
+      "clause_id": "C-102",
+      "base_risk_flag": "HIGH",
+      "base_confidence": 0.88,
+      "relations": [
+        {
+          "type": "SUBJECT_TO",
+          "target_clause_id": "C-103",
+          "cue": "subject to"
+        }
+      ],
+      "effects": [
+        {
+          "type": "OVERRIDE",
+          "target_clause_id": "C-101",
+          "rationale": "NOTWITHSTANDING via policy:overrides[0]",
+          "evidence": {
+            "source_snippet": "This late fee clause is subject to Clause C-103 and acknowledges a stated exception policy.",
+            "target_snippet": "Notwithstanding Clause C-102, this provision grants the landlord priority rights."
+          }
+        },
+        {
+          "type": "MITIGATE",
+          "target_clause_id": "C-202",
+          "rationale": "EXCEPTION_LINK via policy:overrides[1]",
+          "evidence": {
+            "source_snippet": "This late fee clause is subject to Clause C-103 and acknowledges a stated exception policy.",
+            "target_snippet": "This carve-out provides an exception to Clause C-102 by crediting compliant tenants."
+          }
+        },
+        {
+          "type": "BOUND_BY",
+          "target_clause_id": "C-103",
+          "rationale": "SUBJECT_TO via policy:subject_to[0]",
+          "evidence": {
+            "source_snippet": "This late fee clause is subject to Clause C-103 and acknowledges a stated exception policy.",
+            "target_snippet": "Details appear in Annex ANNEX-A, which controls the rent computation guidance."
+          }
+        }
+      ],
+      "policy_notes": [
+        "exception clause tempers late fee risk",
+        "late fee clause follows rent guidance",
+        "priority clause supersedes referenced clause"
+      ],
+      "graph_degree": {
+        "out": 1,
+        "in": 2
+      },
+      "contextual_risk_flag": "OK"
+    },
+    {
+      "clause_id": "C-103",
+      "base_risk_flag": "WARN",
+      "base_confidence": 0.75,
+      "relations": [
+        {
+          "type": "ANNEX_REF",
+          "target_clause_id": "ANNEX-A",
+          "cue": "annex"
+        }
+      ],
+      "effects": [
+        {
+          "type": "DEPEND",
+          "target_clause_id": "ANNEX-A",
+          "rationale": "ANNEX_REF via policy:annex[0]",
+          "evidence": {
+            "source_snippet": "Details appear in Annex ANNEX-A, which controls the rent computation guidance.",
+            "target_snippet": "Annex A defines the rent formula and records sample calculations."
+          }
+        }
+      ],
+      "policy_notes": [
+        "refer to annex for binding detail"
+      ],
+      "graph_degree": {
+        "out": 1,
+        "in": 2
+      },
+      "contextual_risk_flag": "AMBIG"
+    },
+    {
+      "clause_id": "C-202",
+      "base_risk_flag": "WARN",
+      "base_confidence": 0.83,
+      "relations": [
+        {
+          "type": "EXCEPTION_LINK",
+          "target_clause_id": "C-102",
+          "cue": "exception"
+        }
+      ],
+      "effects": [],
+      "policy_notes": [],
+      "graph_degree": {
+        "out": 1,
+        "in": 0
+      }
+    }
+  ],
+  "summary": {
+    "counts_by_effect": {
+      "BOUND_BY": 1,
+      "DEPEND": 2,
+      "MITIGATE": 1,
+      "OVERRIDE": 1
+    },
+    "changed_flags": [
+      "ANNEX-A",
+      "C-102",
+      "C-103"
+    ],
+    "unchanged_flags": [
+      "C-101",
+      "C-202"
+    ]
+  }
+}

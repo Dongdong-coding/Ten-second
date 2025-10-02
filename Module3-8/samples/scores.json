@@ -1,0 +1,30 @@
+[
+  {
+    "clause_id": "C1",
+    "confidence": 0.92,
+    "risk_flag": "HIGH",
+    "adopted_rules": ["R1", "R3"],
+    "reasons": ["Late fee exceeds cap"]
+  },
+  {
+    "clause_id": "C2",
+    "confidence": 0.74,
+    "risk_flag": "HIGH",
+    "adopted_rules": ["R2"],
+    "reasons": ["Assignment requires approval"]
+  },
+  {
+    "clause_id": "C3",
+    "confidence": 0.61,
+    "risk_flag": "OK",
+    "adopted_rules": [],
+    "reasons": ["Clause follows template"]
+  },
+  {
+    "clause_id": "C4",
+    "confidence": 0.68,
+    "risk_flag": "WARN",
+    "adopted_rules": ["R2"],
+    "reasons": ["Reference mismatch"]
+  }
+]

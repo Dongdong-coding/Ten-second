@@ -1,0 +1,26 @@
+{
+  "version": "demo",
+  "rules": [
+    {
+      "id": "R1",
+      "category": "MONEY",
+      "subcategory": "LATE_FEE",
+      "metadata": {"variant": "control"},
+      "flags": {"critical": true}
+    },
+    {
+      "id": "R2",
+      "category": "RIGHTS",
+      "subcategory": "ASSIGNMENT",
+      "metadata": {"variant": "experiment"},
+      "flags": {"critical": false}
+    },
+    {
+      "id": "R3",
+      "category": "RISK",
+      "subcategory": "ESCALATION",
+      "metadata": {"variant": "control"},
+      "flags": {"critical": true}
+    }
+  ]
+}

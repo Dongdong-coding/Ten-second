@@ -1,0 +1,8 @@
+{
+  "timings": {
+    "load": 12.4,
+    "evaluate": 48.9
+  },
+  "memory_mb": 128.5,
+  "batch_size": 4
+}

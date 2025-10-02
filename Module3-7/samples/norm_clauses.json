@@ -1,0 +1,62 @@
+[
+  {
+    "id": "C-101",
+    "index_path": "1.1",
+    "text": "Notwithstanding Clause C-102, this provision grants the landlord priority rights.",
+    "normalized_text": "notwithstanding clause [C-102] this provision grants the landlord priority rights.",
+    "title": "Priority Provision",
+    "tags": ["ref:C-102"],
+    "category": "RIGHTS.SUBLEASE_ASSIGN",
+    "subcategory": "PRIORITY",
+    "canonical_terms": ["priority"],
+    "def_bindings": {}
+  },
+  {
+    "id": "C-102",
+    "index_path": "1.2",
+    "text": "This late fee clause is subject to Clause C-103 and acknowledges a stated exception policy.",
+    "normalized_text": "this late fee clause is subject to [C-103] and acknowledges a stated exception policy.",
+    "title": "Late Fee Clause",
+    "tags": ["ref:C-103"],
+    "category": "MONEY.LATE_FEE",
+    "subcategory": "PENALTY",
+    "canonical_terms": ["late fee"],
+    "def_bindings": {}
+  },
+  {
+    "id": "C-103",
+    "index_path": "1.3",
+    "text": "Details appear in Annex ANNEX-A, which controls the rent computation guidance.",
+    "normalized_text": "details appear in annex [ANNEX-A], which controls the rent computation guidance.",
+    "title": "Rent Details",
+    "tags": ["annex:ANNEX-A"],
+    "category": "MONEY.RENT",
+    "subcategory": "DETAIL",
+    "canonical_terms": ["rent"],
+    "def_bindings": {}
+  },
+  {
+    "id": "ANNEX-A",
+    "index_path": "A.1",
+    "text": "Annex A defines the rent formula and records sample calculations.",
+    "normalized_text": "annex a defines the rent formula and records sample calculations.",
+    "title": "Annex A",
+    "tags": [],
+    "category": "MONEY.RENT",
+    "subcategory": "ANNEX",
+    "canonical_terms": ["annex"],
+    "def_bindings": {"rent_formula": "C-103"}
+  },
+  {
+    "id": "C-202",
+    "index_path": "2.1",
+    "text": "This carve-out provides an exception to Clause C-102 by crediting compliant tenants.",
+    "normalized_text": "this carve-out provides an exception to [C-102] by crediting compliant tenants.",
+    "title": "Exception Clause",
+    "tags": ["ref:C-102"],
+    "category": "MONEY.LATE_FEE",
+    "subcategory": "RELIEF",
+    "canonical_terms": ["exception"],
+    "def_bindings": {}
+  }
+]

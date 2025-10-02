@@ -1,0 +1,17 @@
+{
+  "matching": {
+    "strict_match": true,
+    "allow_conservative": false,
+    "treat_empty_expected_rules_as_negative": false
+  },
+  "gates": {
+    "min_golden_pass_rate": 0.80,
+    "min_rule_precision": 0.60,
+    "min_rule_recall": 0.60,
+    "enforce_rule_floor_for_critical": true
+  },
+  "report": {
+    "top_n_problem_rules": 5,
+    "show_examples_per_rule": 3
+  }
+}

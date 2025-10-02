@@ -1,0 +1,46 @@
+{
+  "rules": [
+    {
+      "rule_id": "RULE-HIGH",
+      "weight": 1.0,
+      "priority": 80,
+      "severity": "WARN",
+      "scope": {
+        "category": "FINANCE",
+        "subcategory": "INTEREST"
+      },
+      "flags": []
+    },
+    {
+      "rule_id": "RULE-CRIT",
+      "weight": 1.1,
+      "priority": 95,
+      "severity": "HIGH",
+      "scope": {
+        "category": "FINANCE",
+        "subcategory": "FRAUD"
+      },
+      "flags": ["critical"]
+    },
+    {
+      "rule_id": "RULE-GENERAL",
+      "weight": 0.8,
+      "priority": 60,
+      "severity": "WARN",
+      "scope": {
+        "category": "FINANCE"
+      },
+      "flags": []
+    },
+    {
+      "rule_id": "RULE-NEG",
+      "weight": 0.6,
+      "priority": 40,
+      "severity": "WARN",
+      "scope": {
+        "category": "FINANCE"
+      },
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "overrides": [
+    {
+      "when": {
+        "edge": "NOTWITHSTANDING",
+        "target.category": "RIGHTS\\.SUBLEASE_ASSIGN"
+      },
+      "effect": "OVERRIDE",
+      "note": "priority clause supersedes referenced clause"
+    },
+    {
+      "when": {
+        "edge": "EXCEPTION_LINK",
+        "this.category": "MONEY\\.LATE_FEE"
+      },
+      "effect": "MITIGATE",
+      "note": "exception clause tempers late fee risk"
+    }
+  ],
+  "subject_to": [
+    {
+      "when": {
+        "edge": "SUBJECT_TO",
+        "this.category": "MONEY\\.LATE_FEE",
+        "target.category": "MONEY\\.RENT"
+      },
+      "effect": "BOUND_BY",
+      "note": "late fee clause follows rent guidance"
+    }
+  ],
+  "annex": [
+    {
+      "when": {
+        "edge": "ANNEX_REF"
+      },
+      "effect": "DEPEND",
+      "note": "refer to annex for binding detail"
+    }
+  ],
+  "thresholds": {
+    "mitigate_conf_min": 0.80,
+    "mitigate_bonus": 0.05
+  },
+  "priorities": ["OVERRIDE", "CONFLICT", "MITIGATE", "BOUND_BY", "DEPEND"],
+  "phrases": {
+    "notwithstanding": "notwithstanding",
+    "subject_to": "subject to"
+  }
+}

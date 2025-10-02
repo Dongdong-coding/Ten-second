@@ -1,0 +1,38 @@
+[
+  {
+    "rule_id": "R-lex-01",
+    "clause_id": "C-001",
+    "match_type": "lex",
+    "spans": [
+      [
+        39,
+        69
+      ]
+    ],
+    "strength": 0.65,
+    "notes": [
+      "account_reference"
+    ]
+  },
+  {
+    "rule_id": "R-num-02",
+    "clause_id": "C-002",
+    "match_type": "num",
+    "spans": [
+      [
+        20,
+        23
+      ]
+    ],
+    "strength": 0.8,
+    "numeric_ctx": {
+      "value": 0.1,
+      "unit": "ratio",
+      "comparator": "<=",
+      "rhs_display": "10 percent"
+    },
+    "notes": [
+      "late_penalty"
+    ]
+  }
+]

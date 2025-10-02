@@ -1,0 +1,24 @@
+[
+  {
+    "clause_id": "C1",
+    "expected_flag": "HIGH",
+    "expected_rules": ["R1", "R3"],
+    "notes": "Late fee escalation"
+  },
+  {
+    "clause_id": "C2",
+    "expected_flag": "WARN",
+    "expected_rules": ["R2"],
+    "notes": "Should warn but not block"
+  },
+  {
+    "clause_id": "C3",
+    "expected_flag": "OK",
+    "expected_rules": []
+  },
+  {
+    "clause_id": "C4",
+    "expected_flag": "WARN",
+    "expected_rules": ["R3"]
+  }
+]
