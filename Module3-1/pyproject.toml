@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "module-3-1"
+version = "0.1.0"
+description = "Deterministic clause segmenter for Korean lease contracts"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]

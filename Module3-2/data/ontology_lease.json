@@ -1,0 +1,117 @@
+﻿{
+  "version": "1.0.0",
+  "categories": [
+    {
+      "code": "MONEY",
+      "name": "금전",
+      "keywords": ["보증금", "차임", "연체료", "임대료"],
+      "subcategories": [
+        {
+          "code": "DEPOSIT",
+          "name": "보증금",
+          "keywords": ["보증금", "임대보증금", "계약보증금"]
+        },
+        {
+          "code": "RENT",
+          "name": "차임",
+          "keywords": ["차임", "월세", "임대료"]
+        },
+        {
+          "code": "LATE_FEE",
+          "name": "연체/증감",
+          "keywords": ["연체료", "지연배상금", "지연이자"]
+        }
+      ]
+    },
+    {
+      "code": "TERM",
+      "name": "기간",
+      "keywords": ["존속기간", "기간", "만료", "갱신"],
+      "subcategories": [
+        {
+          "code": "PERIOD",
+          "name": "존속기간",
+          "keywords": ["존속기간", "기간", "개시", "만료"]
+        },
+        {
+          "code": "RENEWAL",
+          "name": "갱신",
+          "keywords": ["갱신", "연장", "재계약"]
+        },
+        {
+          "code": "TERMINATION",
+          "name": "해지/해제",
+          "keywords": ["해지", "종료", "해제"]
+        }
+      ]
+    },
+    {
+      "code": "USE_MAINT",
+      "name": "사용/관리",
+      "keywords": ["원상복구", "수선", "관리비", "공과금"],
+      "subcategories": [
+        {
+          "code": "RESTORE",
+          "name": "원상복구",
+          "keywords": ["원상복구", "원상회복"]
+        },
+        {
+          "code": "REPAIR",
+          "name": "수선/보수",
+          "keywords": ["수선", "보수", "수리"]
+        },
+        {
+          "code": "MGMT_FEE",
+          "name": "관리비",
+          "keywords": ["관리비", "관리료"]
+        },
+        {
+          "code": "UTILITIES",
+          "name": "공과금",
+          "keywords": ["공과금", "전기요금", "수도요금", "가스요금"]
+        }
+      ]
+    },
+    {
+      "code": "RIGHTS",
+      "name": "권리/의무",
+      "keywords": ["전대", "양도", "권리"],
+      "subcategories": [
+        {
+          "code": "SUBLEASE_ASSIGN",
+          "name": "전대/양도",
+          "keywords": ["전대", "양도", "전대차"]
+        }
+      ]
+    },
+    {
+      "code": "PREMISES",
+      "name": "목적물",
+      "keywords": ["목적물", "주소", "면적"],
+      "subcategories": [
+        {
+          "code": "PREMISES_DESC",
+          "name": "주소/면적",
+          "keywords": ["목적물", "주소", "위치", "면적"]
+        },
+        {
+          "code": "INVENTORY",
+          "name": "비품목록",
+          "keywords": ["비품", "비품목록", "시설"]
+        }
+      ]
+    },
+    {
+      "code": "LAW",
+      "name": "준거법/관할",
+      "keywords": ["준거법", "관할", "분쟁"],
+      "subcategories": [
+        {
+          "code": "LAW",
+          "name": "준거법/관할",
+          "keywords": ["준거법", "관할", "분쟁"]
+        }
+      ]
+    }
+  ]
+}

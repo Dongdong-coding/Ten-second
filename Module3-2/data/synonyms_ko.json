@@ -1,0 +1,57 @@
+﻿{
+  "version": "1.0.0",
+  "terms": {
+    "DEPOSIT": {
+      "canonical": "보증금",
+      "aliases": ["보증금", "임대보증금", "계약보증금", "보증금액"]
+    },
+    "RENT": {
+      "canonical": "차임",
+      "aliases": ["차임", "월차임", "월세", "임대료", "임차료"]
+    },
+    "LATE_FEE": {
+      "canonical": "연체료",
+      "aliases": ["연체료", "지연배상금", "지연이자"]
+    },
+    "RENEWAL": {
+      "canonical": "갱신",
+      "aliases": ["갱신", "연장", "재계약"]
+    },
+    "TERMINATION": {
+      "canonical": "해지",
+      "aliases": ["해지", "해제", "종료"]
+    },
+    "RESTORE": {
+      "canonical": "원상복구",
+      "aliases": ["원상복구", "원상회복"]
+    },
+    "REPAIR": {
+      "canonical": "수선",
+      "aliases": ["수선", "보수", "수리"]
+    },
+    "MGMT_FEE": {
+      "canonical": "관리비",
+      "aliases": ["관리비", "공동관리비", "관리료"]
+    },
+    "UTILITIES": {
+      "canonical": "공과금",
+      "aliases": ["공과금", "전기요금", "수도요금", "가스요금"]
+    },
+    "SUBLEASE_ASSIGN": {
+      "canonical": "전대",
+      "aliases": ["전대", "전대차", "양도", "양수도"]
+    },
+    "PREMISES_DESC": {
+      "canonical": "목적물",
+      "aliases": ["목적물", "주소", "위치", "면적"]
+    },
+    "INVENTORY": {
+      "canonical": "비품목록",
+      "aliases": ["비품", "비품목록", "시설목록"]
+    },
+    "LAW": {
+      "canonical": "준거법",
+      "aliases": ["준거법", "관할", "법률"]
+    }
+  }
+}

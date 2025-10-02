@@ -1,0 +1,121 @@
+{
+  "experiment": {
+    "sticky_scope": "document_id",
+    "variants": {
+      "baseline": 70.0,
+      "canary": 30.0
+    }
+  },
+  "feature_requirements": [
+    "date_range",
+    "numeric_amount"
+  ],
+  "indexes": {
+    "by_category": {
+      "MONEY.DEPOSIT": [
+        "MONEY_DEPOSIT_MINIMUM"
+      ],
+      "TIME.NOTICE": [
+        "NOTICE_PERIOD_DISCLOSURE"
+      ]
+    },
+    "by_flag": {
+      "baseline": [
+        "MONEY_DEPOSIT_MINIMUM",
+        "NOTICE_PERIOD_DISCLOSURE"
+      ]
+    },
+    "by_severity": {
+      "HIGH": [
+        "MONEY_DEPOSIT_MINIMUM"
+      ],
+      "WARN": [
+        "NOTICE_PERIOD_DISCLOSURE"
+      ]
+    }
+  },
+  "metadata": {
+    "checksum_sha256": "b1326cf586906c82f527981ce5ad4143168dbdb291536ec634c6cfd6f9c5ddb1",
+    "compiled_at": "2025-10-01T12:13:02.032218+00:00",
+    "description": "Baseline lease checks",
+    "engine_range": {
+      "max": "1.1.0",
+      "min": "1.0.0"
+    },
+    "engine_version": "1.0.0",
+    "experiment_variants": [
+      "baseline",
+      "canary"
+    ],
+    "ruleset_id": "lease-baseline",
+    "ruleset_version": "1.0.0"
+  },
+  "rules": [
+    {
+      "activation": {
+        "status": "active"
+      },
+      "evidence_hints": [
+        "deposit clause"
+      ],
+      "flags": [
+        "baseline"
+      ],
+      "matchers": [
+        {
+          "pattern": "minimum deposit",
+          "type": "keyword"
+        },
+        {
+          "pattern": "deposit of \\$(?P<amount>\\d+)",
+          "type": "regex"
+        }
+      ],
+      "priority": 10,
+      "requires": [
+        "numeric_amount"
+      ],
+      "rule_id": "MONEY_DEPOSIT_MINIMUM",
+      "scope": {
+        "canonical_terms": [
+          "DEPOSIT_AMOUNT"
+        ],
+        "category": "MONEY.DEPOSIT"
+      },
+      "severity": "HIGH",
+      "version": "1.0.0",
+      "weight": 0.8
+    },
+    {
+      "activation": {
+        "status": "active"
+      },
+      "evidence_hints": [
+        "notice clause"
+      ],
+      "flags": [
+        "baseline"
+      ],
+      "matchers": [
+        {
+          "pattern": "tenant must provide",
+          "type": "phrase"
+        }
+      ],
+      "priority": 20,
+      "requires": [
+        "date_range"
+      ],
+      "rule_id": "NOTICE_PERIOD_DISCLOSURE",
+      "scope": {
+        "canonical_terms": [
+          "NOTICE_PERIOD"
+        ],
+        "category": "TIME.NOTICE"
+      },
+      "severity": "WARN",
+      "version": "1.0.0",
+      "weight": 1.0
+    }
+  ]
+}
